@@ -11,21 +11,6 @@
 
 Welcome to the Exploding Kittens card game! This is an online single-player card game where you try to draw cards from a deck without exploding kittens blowing up in your face. Let's dive into how the game works and how you can access it locally.
 
-## Screenshots
-
-  <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-    <img src="Screenshots/welcomePage.png" alt="welcomePage" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/game1.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/game2.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/game3.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/game4.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/game5.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/game6.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/leaderboard.png" alt="Leaderboard" style="height: 130px; padding: 10px;">
-  </div>
-
-
-
 ## Working
 
   <video controls height="130">

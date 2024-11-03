@@ -40,46 +40,47 @@ Welcome to the Exploding Kittens card game! This is an online single-player card
 
 ### File Directory of the Game
 ```
-   |--exploding-kitten-frontend
+   |--frontend
    |   |-- node_modules/
    |   |-- public/
    |   |   |-- index.html
-   |   |   |-- favicon.ico
+   |   |   |-- cat.ico
    |   |   |-- manifest.json
    |   |-- src/
    |   |   |-- components/
    |   |   |   |-- CardBlock.js
+   |   |   |   |-- Info.js
    |   |   |   |-- LeaderBoard.js
    |   |   |   |--NameForm.js
    |   |   |   |-- Navbar.js
    |   |   |   |-- Toast.js
    |   |   |-- assets/
-   |   |   |   |-- cat1.png
-   |   |   |   |-- cat2.png
-   |   |   |   |-- cat3.png
-   |   |   |   |-- cat4.png
+   |   |   |   |-- card_back.png
+   |   |   |   |-- card_border.png
+   |   |   |   |-- pixx.png
+   |   |   | 
    |   |   |-- App.js
    |   |   |-- App.css
    |   |   |-- index.js
    |   |   |-- index.css
    |   |-- package.json
    |   |-- package-lock.json
-   |   |-- README.md
-   |--exploding-kitten-backend
+   | 
+   |--backend
    |   |--go.mod
    |   |--go.sum
    |   |--main.go
 ```
 
-### For Node.js (React Frontend):
+### For Frontend (React):
 1. Install dependencies: `npm install`
 2. Start the frontend server: `npm start`
 3. Access the game at: `http://localhost:3000`
 
-### For Go Lang (Backend):
+### For Backend (Go Lang):
 1. Install dependencies: `go mod tidy`
 2. Build the Go server: `go build -o main`
-3. Start the server: `./main`
+3. Start the server: `go run main.go`
 
 Sure, here are the steps to set up Redis for your project along with some example code snippets:
 
@@ -116,7 +117,3 @@ That's it! You've successfully set up Redis for your project and connected to it
 - Redux
 - GoLang
 - Redis
-
-
-## Contributions and License
-This project is open for contributions. Feel free to fork the repository, make changes, and submit a pull request. There is no license specified for this project. Enjoy playing and happy coding!

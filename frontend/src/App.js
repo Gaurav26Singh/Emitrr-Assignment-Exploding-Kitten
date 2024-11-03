@@ -134,7 +134,7 @@ function App() {
   useEffect(() => {
     const updateUserPoints = async () => {
       try {
-        await fetch('http://localhost:8080/api/user/points', {
+        await fetch('https://emitrr-assignment-exploding-kitten.onrender.com/api/user/points', {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json'

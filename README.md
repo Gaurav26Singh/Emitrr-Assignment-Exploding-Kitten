@@ -28,15 +28,6 @@ Welcome to the Exploding Kittens card game! This is an online single-player card
   - 🔀 **Shuffle Card**: Shuffles the deck and resets the game.
   - 💣 **Exploding Kitten Card**: Instant game over if drawn.
 
-
-    <img src="exploding-kittens-frontend/src/assets/cat1.png" alt="cat1" style="height: 130px;">
-    <img src="exploding-kittens-frontend/src/assets/cat2.png" alt="cat2" style="height: 130px;">
-    <img src="exploding-kittens-frontend/src/assets/cat3.png" alt="cat3" style="height: 130px;">
-    <img src="exploding-kittens-frontend/src/assets/cat4.png" alt="cat4" style="height: 130px;">
-
-
-
-
 - **Gameplay:**
   - Clicking on the deck reveals a card.
   - If it's a cat card, it's removed from the deck.

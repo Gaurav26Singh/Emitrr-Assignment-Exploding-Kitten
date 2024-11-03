@@ -2,24 +2,30 @@ package main
 
 import (
 	"encoding/json"
-	"log"
-	"net/http"
-	"sort"
-	"strconv"
-
 	"github.com/go-redis/redis/v8"
 	"github.com/gorilla/mux"
+	"github.com/joho/godotenv"
 	"github.com/rs/cors"
+	"log"
+	"net/http"
+	"os"
+	"sort"
+	"strconv"
 )
 
 var rdb *redis.Client
 
 func init() {
-	// Initialize Redis client with new connection details
+	// Load .env file
+	if err := godotenv.Load(); err != nil {
+		log.Fatalf("Error loading .env file: %v", err)
+	}
+
+	// Initialize Redis client with environment variables
 	rdb = redis.NewClient(&redis.Options{
-		Addr:     "redis-16245.c238.us-central1-2.gce.redns.redis-cloud.com:16245",
-		Password: "3th7CSqr11k3oEi3GRMBwYOFFh1c1tNs", // Use the specified password
-		DB:       0,
+		Addr:     os.Getenv("REDIS_ADDR"),
+		Password: os.Getenv("REDIS_PASSWORD"),
+		DB:       0, // you can use strconv.Atoi(os.Getenv("REDIS_DB")) to convert DB to int if needed
 	})
 
 	// Test the Redis connection

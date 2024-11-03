@@ -84,7 +84,7 @@ Welcome to the Exploding Kittens card game! This is an online single-player card
 
 Sure, here are the steps to set up Redis for your project along with some example code snippets:
 
-### For Redis DB(Backend):
+### For Redis DB (Backend):
 
 #### Step 1: Install Redis
 

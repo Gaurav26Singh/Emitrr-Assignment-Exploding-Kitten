@@ -16,16 +16,16 @@ import (
 var rdb *redis.Client
 
 func init() {
-	// Load .env file
+	// Attempt to load the .env file, but continue without it if it's missing
 	if err := godotenv.Load(); err != nil {
-		log.Fatalf("Error loading .env file: %v", err)
+		log.Println("No .env file found; using system environment variables")
 	}
 
-	// Initialize Redis client with environment variables
+	// Initialize Redis client using environment variables
 	rdb = redis.NewClient(&redis.Options{
 		Addr:     os.Getenv("REDIS_ADDR"),
 		Password: os.Getenv("REDIS_PASSWORD"),
-		DB:       0, // you can use strconv.Atoi(os.Getenv("REDIS_DB")) to convert DB to int if needed
+		DB:       0, // Adjust DB number if necessary
 	})
 
 	// Test the Redis connection

@@ -109,8 +109,28 @@ Don't forget to close the Redis connection when you're done:
 ```bash
 redis-server-stop
 ```
+### Environment Variables:
 That's it! You've successfully set up Redis for your project and connected to it using Go Lang. Now you can use Redis to store and retrieve data as needed.
+This project requires certain environment variables to be configured. Since the .env file is included in .gitignore, it is not present in the repository. After cloning the project, create a .env file in the root directory of the project with the following keys:
 
+```
+REDIS_ADDR=<your_redis_address>
+REDIS_PASSWORD=<your_redis_password>
+REDIS_DB=<your_redis_db_number>
+```
+
+#### Steps to Set Up Environment Variables
+
+#### Step 1:
+Create a .env file: In the project root, create a new file named .env.
+
+#### Step 2:
+Add the variables: Replace <your_redis_address>, <your_redis_password>, and <your_redis_db_number> with your actual Redis configuration values.
+
+#### Step 3:
+Save the file: Ensure the file is saved and accessible from the project root.
+
+Alternatively, you can set these environment variables directly on your server or deployment platform instead of creating a .env file, especially for production deployments.
 
 ## Tech Stack Used
 - ReactJs

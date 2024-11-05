@@ -9,7 +9,7 @@ function LeaderBoard({ userName, points }) {
   }, []);
 
   const fetchLeaderboard = () => {
-    fetch('https://emitrr-assignment-exploding-kitten.onrender.com/api/leaderboard')
+    fetch('https://emitrr-assignment-exploding-kitten-bj3tbr4tl.vercel.app/api/leaderboard')
       .then(response => response.json())
       .then(data => {
         setLeaderBoardData(data);

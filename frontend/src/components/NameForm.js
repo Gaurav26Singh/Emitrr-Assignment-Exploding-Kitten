@@ -16,7 +16,7 @@ function NameForm({ onNameSubmit }) {
     e.preventDefault();
     try {
       if(name==="") throw new Error("Name is required");
-      await axios.post('https://emitrr-assignment-exploding-kitten-bj3tbr4tl.vercel.app/api/user', { name });
+      await axios.post('https://emitrr-assignment-exploding-kitten.onrender.com/api/user', { name });
       onNameSubmit(name); 
       setErrorMessage('');
     } catch (error) {
